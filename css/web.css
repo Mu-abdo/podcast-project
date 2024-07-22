@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+:root{
+    --primary-color: #eb5c2c;
+    --primary-transition: all 400ms ease;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{text-decoration: none;}
+*{
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+.channel-podcast .box-channel {
+    padding: 20px;
+    background: #fff;
+    transition: var(--primary-transition);
+    text-decoration: none;
+    width: 170px;
+    flex-direction: column;
+    border-bottom: 1px solid transparent;
+}
+body {
+    background: #f3f3f3;
+}
+.hover-translatey:hover{
+    border-bottom: 1px solid var(--primary-color);
+    transform: translateY(-5px);
+}
+.block-episodes .episode {
+    flex: 1;
+    min-width: 150px;
+    transition: var(--primary-transition);
+    border-bottom: 1px solid transparent;
+    background: #fff;
+}
+.block-episodes .img-block-episodes-latest span {
+    background: #fff;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 5%;
+}
+.block-episodes .category-episodes-latest {
+    color: var(--primary-color);
+}
+.block-episodes {
+    margin: 0 -1.5rem !important;
+}
+.title-slider-episodes-latest a {color: #999;}
+.block-episodes .episode:hover img.img-episodes {filter: contrast(0.5);}
+
+.block-episodes .episode img.img-episodes {
+    transition: var(--primary-transition);
+}
+.arrow-slider .arrow-1 {
+    background: #fff;
+    margin: 1px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50%;
+    transition: var(--primary-transition);
+}
+.arrow-slider .arrow-1:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.title-slider-episodes-latest a:hover {
+    color: var(--primary-color);
+}
+.title-slider-episodes-latest a {
+    transition: var(--primary-transition);
+}
