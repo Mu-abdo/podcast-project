@@ -6,19 +6,23 @@
 img{
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
-a{text-decoration: none;}
+a{text-decoration: none; color: #000;}
+a:hover{color: #000;}
 *{
     font-family: "Noto Kufi Arabic", sans-serif;
 }
 .channel-podcast .box-channel {
     padding: 20px;
-    background: #fff;
     transition: var(--primary-transition);
     text-decoration: none;
     width: 170px;
     flex-direction: column;
     border-bottom: 1px solid transparent;
+}
+.channel-podcast .box-channel:hover{
+    background: #fff;
 }
 body {
     background: #f3f3f3;
@@ -32,7 +36,7 @@ body {
     min-width: 150px;
     transition: var(--primary-transition);
     border-bottom: 1px solid transparent;
-    background: #fff;
+    background: #ebebeb;
 }
 .block-episodes .img-block-episodes-latest span {
     background: #fff;
@@ -51,7 +55,6 @@ body {
 }
 .title-slider-episodes-latest a {color: #999;}
 .block-episodes .episode:hover img.img-episodes {filter: contrast(0.5);}
-
 .block-episodes .episode img.img-episodes {
     transition: var(--primary-transition);
 }
@@ -75,4 +78,49 @@ body {
 }
 .title-slider-episodes-latest a {
     transition: var(--primary-transition);
+}
+.latest-atricals .footer-big-artical h4 {
+    font-size: 30px;
+}
+.auther svg {
+    color: var(--primary-color);
+    font-size: 13px;
+}
+.latest-atricals .footer-big-artical {
+    margin-right: 20px;
+    padding-left: 50px;
+}
+.hover-artical{
+    transition: var(--primary-transition);
+    padding: 5px;
+}
+.hover-artical:hover {
+    background: #e7e7e7;
+}
+.latest-atricals .img-big-artical img {
+    height: 250px;
+    width: 450px;
+}
+.small-artical .img-small-artical img {
+    width: 160px;
+}
+.footer-small-artical h4 {
+    font-size: 20px;
+}
+.small-artical {
+    margin-left: 25px;
+}
+.small-artical .footer-small-artical {
+    padding-right: 18px;
+    padding-left: 10px;
+}
+.small-artical.hover-artical.rounded.d-flex.align-items-center {
+    padding: 5px;
+}
+.latest-atricals, .latest-version {
+    border-bottom: 1px solid #dfdfdf;
+}
+.box-version .box-one {
+    width: 200px;
+    cursor: pointer;
 }
