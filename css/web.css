@@ -8,6 +8,12 @@ img{
     height: auto;
     object-fit: cover;
 }
+body {
+    background: linear-gradient(45deg, #eb5c2c12, transparent, #aa1e2317) !important;
+}
+nav.navbar {
+    background: #f9f9f9;
+}
 a{text-decoration: none; color: #000;}
 a:hover{color: #000;}
 *{
@@ -95,7 +101,7 @@ body {
     padding: 5px;
 }
 .hover-artical:hover {
-    background: #e7e7e7;
+    background: #ef68260d;
 }
 .latest-atricals .img-big-artical img {
     height: 250px;
@@ -123,4 +129,62 @@ body {
 .box-version .box-one {
     width: 200px;
     cursor: pointer;
+}
+.page-episodes img {
+    width: 510px;
+}
+nav input.form-control.me-2 {
+    border: none;
+    background: #e7e7e7;
+}
+
+nav button.btn.btn-outline-success {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+nav .btn:hover{
+    background-color: var(--primary-color);
+    transition: var(--primary-transition);
+}
+nav .btn:hover svg{color: #fff;}
+ul.navbar-nav li {
+    margin: 0 10px;
+}
+ul.navbar-nav li svg , ul.navbar-nav li a {
+    font-size: 20px;
+    transition: var(--primary-transition);
+}
+ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
+    color: var(--primary-color);
+}
+.window-episodes {
+    background: #fff;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.window-episodes audio {
+    width: 430px;
+    margin-right: auto;
+}
+
+.window-episodes .box-play svg {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #f06627;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.box-audio h2 {
+    font-size: 25px;
+}
+
+.box-audio {
+    background: #f1f3f4;
+    padding: 20px;
+    border-radius: 20px;
 }
