@@ -16,9 +16,7 @@ nav.navbar {
 }
 a{text-decoration: none; color: #000;}
 a:hover{color: #000;}
-*{
-    font-family: "Noto Kufi Arabic", sans-serif;
-}
+*{font-family: "Noto Kufi Arabic", sans-serif;}
 .channel-podcast .box-channel {
     padding: 20px;
     transition: var(--primary-transition);
@@ -27,11 +25,16 @@ a:hover{color: #000;}
     flex-direction: column;
     border-bottom: 1px solid transparent;
 }
-.channel-podcast .box-channel:hover{
-    background: #fff;
-}
-body {
-    background: #f3f3f3;
+.channel-podcast .box-channel:hover{background: #fff;}
+body {background: #f3f3f3;}
+nav form {background: #e7e7e7;}
+nav.navbar.fix-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f9f9f9e3;
+    z-index: 5;
 }
 .hover-translatey:hover{
     border-bottom: 1px solid var(--primary-color);
@@ -137,10 +140,32 @@ nav input.form-control.me-2 {
     border: none;
     background: #e7e7e7;
 }
-
+.form-control:focus{box-shadow:none}
 nav button.btn.btn-outline-success {
-    border-color: var(--primary-color);
+    border:none;
     color: var(--primary-color);
+}
+.channel-podcast.fixed-web {
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    background: #fff;
+    top: 0;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+.fixed-web .hover-translatey:hover{
+    border: none;
+}
+.channel-podcast.fixed-web img {
+    width: 90px;
+}
+.channel-podcast.fixed-web .box-channel {
+    padding: 10px;
+    width: 100px;
+}
+a.box-channel.fixed-web img {
+    width: 89px;
 }
 nav .btn:hover{
     background-color: var(--primary-color);
@@ -182,9 +207,32 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
 .box-audio h2 {
     font-size: 25px;
 }
-
 .box-audio {
     background: #f1f3f4;
     padding: 20px;
     border-radius: 20px;
+}
+.player-bar {
+    background: #e1e1e1;
+    padding: 5px 20px;
+}
+.player-bar img {
+    height: 80px;
+    width: 80px;
+}
+.player-bar .title-episodes-player h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.episode-data,
+.audio-bar,
+.some-options
+{
+    width: 600px;
+}
+.some-options {
+    text-align: end;
+}
+.audio-bar audio {
+    width: 100%;
 }
