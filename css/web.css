@@ -41,11 +41,10 @@ nav.navbar.fix-header {
     transform: translateY(-5px);
 }
 .block-episodes .episode {
-    flex: 1;
-    min-width: 150px;
     transition: var(--primary-transition);
     border-bottom: 1px solid transparent;
     background: #ebebeb;
+    border: 4px solid #fff;
 }
 .block-episodes .img-block-episodes-latest span {
     background: #fff;
@@ -96,8 +95,7 @@ nav.navbar.fix-header {
     font-size: 13px;
 }
 .latest-atricals .footer-big-artical {
-    margin-right: 20px;
-    padding-left: 50px;
+    padding: 0 50px;
 }
 .hover-artical{
     transition: var(--primary-transition);
@@ -145,7 +143,7 @@ nav button.btn.btn-outline-success {
     border:none;
     color: var(--primary-color);
 }
-.channel-podcast.fixed-web {
+/* .channel-podcast.fixed-web {
     position: fixed;
     left: 0;
     flex-direction: column;
@@ -166,7 +164,7 @@ nav button.btn.btn-outline-success {
 }
 a.box-channel.fixed-web img {
     width: 89px;
-}
+} */
 nav .btn:hover{
     background-color: var(--primary-color);
     transition: var(--primary-transition);
@@ -189,12 +187,10 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
     border-radius: 10px;
     padding: 20px;
 }
-
 .window-episodes audio {
     width: 430px;
     margin-right: auto;
 }
-
 .window-episodes .box-play svg {
     margin: 0 5px;
     padding: 10px;
@@ -212,27 +208,27 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
     padding: 20px;
     border-radius: 20px;
 }
-.player-bar {
-    background: #e1e1e1;
-    padding: 5px 20px;
-}
-.player-bar img {
-    height: 80px;
+.swiper-button-next,.swiper-button-prev {
+    background: #fff;
     width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #eb5c2c;
 }
-.player-bar .title-episodes-player h4 {
-    font-size: 14px;
-    font-weight: 700;
-}
-.episode-data,
-.audio-bar,
-.some-options
-{
-    width: 600px;
-}
-.some-options {
-    text-align: end;
-}
-.audio-bar audio {
+.swiper {
     width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

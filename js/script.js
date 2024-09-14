@@ -2,11 +2,6 @@
 $(function(){
     $('#includeheader').load('header.html');
 })
-
-$(function(){
-    $('#player').load('player-bar.html')
-})
-
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 100) {
