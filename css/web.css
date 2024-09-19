@@ -58,9 +58,6 @@ nav.navbar.fix-header {
 .block-episodes .category-episodes-latest {
     color: var(--primary-color);
 }
-.block-episodes {
-    margin: 0 -1.5rem !important;
-}
 .title-slider-episodes-latest a {color: #999;}
 .block-episodes .episode:hover img.img-episodes {filter: contrast(0.5);}
 .block-episodes .episode img.img-episodes {
@@ -159,11 +156,7 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
     color: var(--primary-color);
 }
 .window-episodes {
-    background: #fff;
-    width: 700px;
-    margin: 20px auto;
     border-radius: 10px;
-    padding: 20px;
 }
 .window-episodes audio {
     width: 430px;
@@ -243,6 +236,14 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
         width: 100px; 
         height: 100px;
     }
+    h4 {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -270,48 +271,5 @@ ul.navbar-nav li:hover svg, ul.navbar-nav li:hover a{
 }
   
 
-/* Base styles */
-.navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff; /* Adjust the background color as needed */
-    position: fixed;
-    top: 0;
-    right: -300px; /* Hide off-screen initially */
-    width: 300px; /* Adjust the width as needed */
-    height: 100%;
-    transition: right 0.3s ease-in-out;
-    z-index: 1050; /* Make sure it's above other content */
-  }
-  
-  .navbar-collapse.show {
-    right: 0;
-  }
-  
-  .navbar-toggler {
-    position: relative;
-    z-index: 1060; /* Above the collapsible menu */
-  }
-  
-  /* Optional: Adjustments for the form and menu items */
-  .form-control {
-    margin: 0.5rem 1rem;
-  }
-  
-  .navbar-nav {
-    margin-top: 1rem;
-  }
-  
-  .nav-item {
-    margin: 0.5rem 0;
-  }
-  
-  .nav-link {
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  .nav-link i {
-    margin-right: 0.5rem;
-  }
+
   
